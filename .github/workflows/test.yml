@@ -27,7 +27,7 @@ jobs:
           branch: ${{ env.BRANCH }}
           commit-message: Tested by example action
           title: Tested by create-pr-action
-          body: 日本語もOKです。
+          body: 日本語もOKです
 
       - name: Verify
         run: |
