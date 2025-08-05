@@ -13,4 +13,4 @@ runs:
     - run: echo "Hello, ${TARGET}!"
       shell: bash
       env:
-        TARGET: ${{ inputs.target
+        TARGET: ${{ inputs.target }}
