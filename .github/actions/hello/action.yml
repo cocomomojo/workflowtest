@@ -1,0 +1,16 @@
+name: Hello
+description: An innovative action that greets you cheerfully
+inputs:
+  target:
+    description: Who do you want to greet?
+outputs:
+  target:
+    value: ${{ inputs.target }}
+    description: The person greeted
+runs:
+  using: composite
+  steps:
+    - run: echo "Hello, ${TARGET}!"
+      shell: bash
+      env:
+        TARGET: ${{ inputs.target
